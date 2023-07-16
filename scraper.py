@@ -10,7 +10,7 @@ COOKIES = getenv('MY_COOKIES')
 MY_UUID = getenv('REFERENCE_USER_UUID')
 
 if not COOKIES or not MY_UUID:
-    raise Exception("please set the environmental variables")
+    raise Exception("please set the environmental variables in env.sh")
 
 def get_page(page_index):
     # ancestry paging is weird:

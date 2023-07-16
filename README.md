@@ -31,9 +31,15 @@ Copy your ancestry matches in a CSV format
     - this kind of presumes a linux-like environment
 3. results will display to stdout, and can be copied or redirected to a file
 
-## Contributing
-
-Contributions are welcome! Please follow the [guidelines](CONTRIBUTING.md).
+## Usage without docker
+ 1.  install python (I'm using 3.8, but you shouldn't be limited to it)
+ 2. install pip
+ 3. cd ${CLONED_DIRECTORY}
+ 4. pip3 install -r ./requirements.txt
+ 5. export REFERENCE_USER_UUID='<UUID from docker instructions>'
+ 6. export MY_COOKIES='<cookies from docker instructions>'
+ 7. python3 ./scraper.py
+ 8. results will go to stdout, and can be redirected to a file
 
 ## License
 
