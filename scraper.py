@@ -9,6 +9,8 @@ import requests, traceback
 COOKIES = getenv('MY_COOKIES')
 MY_UUID = getenv('REFERENCE_USER_UUID')
 
+if not COOKIES or not MY_UUID:
+    raise Exception("please set the environmental variables")
 
 def get_page(page_index):
     # ancestry paging is weird:
@@ -64,5 +66,5 @@ if __name__ == '__main__':
 
         # pprint(all_matches)
     except Exception:
-        print(traceback.print_exc())
+        traceback.print_exc()
 
