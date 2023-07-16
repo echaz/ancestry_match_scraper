@@ -1,0 +1,2 @@
+export MY_COOKIES=''
+export REFERENCE_USER_UUID=''
